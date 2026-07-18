@@ -31,8 +31,8 @@ const WhatsAppIcon = ({ className }) => (
 const PLANS = [
   {
     title: 'Personal Portfolio',
-    originalPrice: '₹998',
-    price: '₹499',
+    originalPrice: '₹1,598',
+    price: '₹799',
     discount: '50% OFF',
     features: ['Simple 1-page layout', 'Mobile responsive design', 'Basic sections included', '2 revision rounds included', '2-day delivery', 'Full source code ownership'],
     popular: false,
@@ -47,16 +47,16 @@ const PLANS = [
   },
   {
     title: 'Digital Gift Site',
-    originalPrice: '₹1,000 – ₹2,000',
-    price: '₹500 – ₹1,000',
+    originalPrice: '₹2,000',
+    price: '₹1,000',
     discount: '50% OFF',
     features: ['Personalized greeting experience', 'Interactive elements & music', 'Photo & memory carousel', '3 revision rounds included', 'Netlify hosting setup', '30 days support included'],
     popular: true,
   },
   {
     title: 'Premium Website',
-    originalPrice: '₹6,000 – ₹10,000',
-    price: '₹3,000 – ₹5,000',
+    originalPrice: '₹7,000',
+    price: '₹3,500',
     discount: '50% OFF',
     features: ['Multi-page custom design', 'Premium GSAP micro-animations', 'Contact form & basic SEO', '3 revision rounds included', '30 days support included', 'Full source code ownership'],
     popular: false,

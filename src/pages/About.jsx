@@ -39,23 +39,7 @@ const STATS = [
   { value: 'Fast', label: 'Delivery Options' },
 ]
 
-/* ── Meet the Rhythm team ── */
-const TEAM = [
-  {
-    name: 'Pradeep Kumar',
-    role: 'Founder & Lead Developer',
-    avatar: '/team/pradeep.jpg',
-    bio: 'Founder and Lead Developer. Full-stack developer specializing in React, Vite, GSAP, and custom-coded, high-performance interfaces.',
-    imgStyle: { objectPosition: 'center 15%' }
-  },
-  {
-    name: 'Akash',
-    role: 'Marketing Director',
-    avatar: '/team/akash.png',
-    bio: 'Marketing Director responsible for brand direction, marketing strategy, growth campaigns, and global client relations.',
-    imgStyle: { objectPosition: 'center' }
-  },
-]
+
 
 const SectionLabel = ({ children }) => (
   <span className="font-mono-accent" style={{ display: 'block', marginBottom: '0.75rem' }}>{children}</span>
@@ -182,78 +166,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── Meet the Rhythm (Team) ── */}
-      <section style={{ padding: '6rem 0', borderBottom: '1px solid #e5e7eb' }}>
-        <div className="section-container">
-          <div className="reveal" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
-            <SectionLabel>/ team</SectionLabel>
-            <h2 style={{ fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', marginBottom: '0.75rem' }}>
-              Meet the Rhythm
-            </h2>
-            <p style={{ maxWidth: '400px', margin: '0 auto' }}>
-              The minds behind the obsessive craftsmanship.
-            </p>
-          </div>
 
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(1, 1fr)',
-            gap: '1.5rem',
-            maxWidth: '800px',
-            margin: '0 auto',
-          }}
-            className="md:grid-cols-2"
-          >
-            {TEAM.map((member) => (
-              <div
-                key={member.name}
-                className="reveal"
-                style={{
-                  background: '#ffffff',
-                  border: '1px solid #e5e7eb',
-                  borderRadius: '16px',
-                  padding: '2rem',
-                  transition: 'transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                }}
-                onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-                onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-              >
-                <img
-                  src={member.avatar}
-                  alt={member.name}
-                  loading="lazy"
-                  decoding="async"
-                  style={{
-                    width: '80px',
-                    height: '80px',
-                    borderRadius: '100%',
-                    objectFit: 'cover',
-                    border: '1px solid #e5e7eb',
-                    marginBottom: '1.25rem',
-                    ...member.imgStyle
-                  }}
-                />
-                <h3 style={{ fontSize: '1.0625rem', fontWeight: 600, letterSpacing: '-0.02em', color: '#111111', marginBottom: '0.25rem' }}>
-                  {member.name}
-                </h3>
-                <p style={{
-                  fontSize: '0.75rem',
-                  color: '#9ca3af',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.06em',
-                  marginBottom: '0.875rem',
-                  fontFamily: 'JetBrains Mono, monospace',
-                }}>
-                  {member.role}
-                </p>
-                <p style={{ fontSize: '0.9375rem', lineHeight: 1.65, color: '#6b7280' }}>
-                  {member.bio}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── Contact form ── */}
       <section id="contact" style={{ padding: '6rem 0' }}>
