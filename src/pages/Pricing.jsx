@@ -31,40 +31,44 @@ const WhatsAppIcon = ({ className }) => (
 const PLANS = [
   {
     title: 'Personal Portfolio',
-    originalPrice: '₹1,598',
-    price: '₹799',
+    originalPrice: '$198',
+    price: '$99',
     discount: '50% OFF',
     features: ['Simple 1-page layout', 'Mobile responsive design', 'Basic sections included', '2 revision rounds included', '2-day delivery', 'Full source code ownership'],
     popular: false,
+    buttonText: 'Book Now',
   },
   {
     title: 'Personal Dashboard',
-    originalPrice: '₹1,000',
-    price: '₹500',
+    originalPrice: '$298',
+    price: '$149',
     discount: '50% OFF',
     features: ['Interactive charts & data visuals', 'Light & dark mode support', 'Local storage / API sync', '3 revision rounds included', '3-5 days delivery', 'Full source code ownership'],
     popular: false,
+    buttonText: 'Book Now',
   },
   {
     title: 'Digital Gift Site',
-    originalPrice: '₹2,000',
-    price: '₹1,000',
+    originalPrice: '$198',
+    price: '$99',
     discount: '50% OFF',
     features: ['Personalized greeting experience', 'Interactive elements & music', 'Photo & memory carousel', '3 revision rounds included', 'Netlify hosting setup', '30 days support included'],
     popular: true,
+    buttonText: 'Get in touch to order now',
   },
   {
     title: 'Premium Website',
-    originalPrice: '₹7,000',
-    price: '₹3,500',
+    originalPrice: '$1,000',
+    price: '$500',
     discount: '50% OFF',
     features: ['Multi-page custom design', 'Premium GSAP micro-animations', 'Contact form & basic SEO', '3 revision rounds included', '30 days support included', 'Full source code ownership'],
     popular: false,
+    buttonText: 'Get in touch to order now',
   },
 ]
 
 const COMPARISONS = [
-  { feature: 'Price',         freelancer: 'Market rates',          agency: 'Premium rates',         nexroythm: 'Starts at ₹499' },
+  { feature: 'Price',         freelancer: 'Market rates',          agency: 'Premium rates',         nexroythm: 'Starts at $99' },
   { feature: 'Customization', freelancer: 'Often template-based',   agency: 'Varies by budget',      nexroythm: 'Fully custom code' },
   { feature: 'Delivery',      freelancer: '1–2 weeks',             agency: '3–6 weeks',             nexroythm: '2–7 days' },
   { feature: 'Ownership',     freelancer: 'Varies by contract',    agency: 'Licensing fees apply',  nexroythm: 'Full source code' },
@@ -74,7 +78,7 @@ const COMPARISONS = [
 ]
 
 const FAQS = [
-  { q: 'Is ₹499 really enough?',             a: "Yes. It covers a clean, single-page, fully responsive personal portfolio or landing page with basic sections, 2 revision rounds, and 2-day delivery." },
+  { q: 'Is $99 really enough?',             a: "Yes. It covers a clean, single-page, fully responsive personal portfolio or landing page with basic sections, 2 revision rounds, and 2-day delivery." },
   { q: 'Do I get the source code?',          a: 'Absolutely. You own every single line of code we write for your project.' },
   { q: "What if I don't know what I want?",  a: 'We offer a free consultation call to help plan and define your design requirements.' },
   { q: 'Are the courses beginner-friendly?', a: 'Yes. We assume zero prior knowledge and teach using practical, hands-on projects.' },
@@ -230,7 +234,7 @@ export default function Pricing() {
                   }}
                 >
                   <WhatsAppIcon className="w-5 h-5 flex-shrink-0" />
-                  <span className="font-medium">Get Started</span>
+                  <span className="font-medium">{plan.buttonText}</span>
                 </a>
               </div>
             ))}
